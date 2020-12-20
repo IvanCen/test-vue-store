@@ -1,38 +1,10 @@
 [
   {
-    "name": "cart",
-    "path": "/cart",
-    "component": "/Users/admin/WebstormProjects/vue-test-work/pages/cart.vue",
-    "chunkName": "pages/cart",
-    "_name": "_97f7f5e6"
-  },
-  {
-    "name": "categories",
-    "path": "/categories",
-    "component": "/Users/admin/WebstormProjects/vue-test-work/pages/categories/index.vue",
-    "chunkName": "pages/categories/index",
-    "_name": "_91f76be8"
-  },
-  {
-    "name": "products",
-    "path": "/products",
-    "component": "/Users/admin/WebstormProjects/vue-test-work/pages/products/index.vue",
-    "chunkName": "pages/products/index",
-    "_name": "_51454c94"
-  },
-  {
     "name": "categories-category",
-    "path": "/categories/:category",
+    "path": "/categories/:category?",
     "component": "/Users/admin/WebstormProjects/vue-test-work/pages/categories/_category.vue",
     "chunkName": "pages/categories/_category",
     "_name": "_3e2cb117"
-  },
-  {
-    "name": "products-product",
-    "path": "/products/:product",
-    "component": "/Users/admin/WebstormProjects/vue-test-work/pages/products/_product.vue",
-    "chunkName": "pages/products/_product",
-    "_name": "_00a57bde"
   },
   {
     "name": "index",

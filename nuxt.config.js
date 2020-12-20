@@ -1,4 +1,3 @@
-
 export default {
   /*
   ** Nuxt rendering mode
@@ -15,7 +14,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    title: 'Clothing Store',
+    title: 'Store',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -37,7 +36,6 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    '~plugins/filters.js'
   ],
   /*
   ** Auto import components

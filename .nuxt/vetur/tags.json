@@ -5,17 +5,29 @@
   "LazyCommonNavbar": {
     "description": "Auto imported from components/CommonNavbar.vue"
   },
-  "ProductGallery": {
-    "description": "Auto imported from components/product-details/ProductGallery.vue"
+  "Rating": {
+    "description": "Auto imported from components/UI/Rating.vue"
   },
-  "LazyProductGallery": {
-    "description": "Auto imported from components/product-details/ProductGallery.vue"
+  "LazyRating": {
+    "description": "Auto imported from components/UI/Rating.vue"
   },
-  "CommonProductsListPage": {
-    "description": "Auto imported from components/products-list/CommonProductsListPage.vue"
+  "Select": {
+    "description": "Auto imported from components/UI/Select.vue"
   },
-  "LazyCommonProductsListPage": {
-    "description": "Auto imported from components/products-list/CommonProductsListPage.vue"
+  "LazySelect": {
+    "description": "Auto imported from components/UI/Select.vue"
+  },
+  "Cart": {
+    "description": "Auto imported from components/cart/Cart.vue"
+  },
+  "LazyCart": {
+    "description": "Auto imported from components/cart/Cart.vue"
+  },
+  "CartProductsList": {
+    "description": "Auto imported from components/cart/CartProductsList.vue"
+  },
+  "LazyCartProductsList": {
+    "description": "Auto imported from components/cart/CartProductsList.vue"
   },
   "ProductListCard": {
     "description": "Auto imported from components/products-list/ProductListCard.vue"
@@ -34,11 +46,5 @@
   },
   "LazyProductsListFilter": {
     "description": "Auto imported from components/products-list/ProductsListFilter.vue"
-  },
-  "CartProductsList": {
-    "description": "Auto imported from components/cart/CartProductsList.vue"
-  },
-  "LazyCartProductsList": {
-    "description": "Auto imported from components/cart/CartProductsList.vue"
   }
 }

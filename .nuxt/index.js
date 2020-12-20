@@ -16,7 +16,6 @@ import { createStore } from './store.js'
 import nuxt_plugin_plugin_34dc73b3 from 'nuxt_plugin_plugin_34dc73b3' // Source: ./components/plugin.js (mode: 'all')
 import nuxt_plugin_vlazyload_7e291577 from 'nuxt_plugin_vlazyload_7e291577' // Source: ./v-lazy-load.js (mode: 'all')
 import nuxt_plugin_axios_383f596e from 'nuxt_plugin_axios_383f596e' // Source: ./axios.js (mode: 'all')
-import nuxt_plugin_filters_2b4f519a from 'nuxt_plugin_filters_2b4f519a' // Source: ../plugins/filters.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -73,7 +72,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Clothing Store","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"![nuxt.js + apisful](static\u002Frepo-hero-image.png)"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"Store","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"![nuxt.js + apisful](static\u002Frepo-hero-image.png)"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
     store,
     router,
@@ -212,10 +211,6 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_axios_383f596e === 'function') {
     await nuxt_plugin_axios_383f596e(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_filters_2b4f519a === 'function') {
-    await nuxt_plugin_filters_2b4f519a(app.context, inject)
   }
 
   // Lock enablePreview in context
