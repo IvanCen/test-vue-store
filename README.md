@@ -4,7 +4,7 @@
 Интернет магазин с основным функционалом для совершения покупки.
 
 ## Демо 
-![Main page](https://github.com/IvanCen/test-vue-store/blob/master/static/images/main-image.png "Скрин главной страницы")
+![Main page](https://github.com/IvanCen/test-vue-store/blob/main/static/main-image.png "Скрин главной страницы")
 
 ## Что реализованно?
 * Роутинг между категориями
@@ -18,10 +18,6 @@
     * Сортировка по цене и рейтингу
     * Добавление товара в корзину
     * lazy loading
-
-## Как открыть?
-Сайт доступен по ссылке http://my-business-card.surge.sh
-
 
 ## Сборка
 
