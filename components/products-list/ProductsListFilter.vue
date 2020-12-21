@@ -36,7 +36,7 @@
 </script>
 
 <style scoped lang="sass">
-  @import "~/assets/sass/initial-variables"
+  @import "assets/sass/initial-variables"
 
   .categories
     display: flex
@@ -55,7 +55,7 @@
 
       &_active .categories__link
         text-decoration-line: underline
-        color: $black
+        color: $dark
 
     &__link
       color: $gray
@@ -63,7 +63,7 @@
       transition: $duration
 
       &:hover
-        color: $black
+        color: $dark
 
 
 </style>

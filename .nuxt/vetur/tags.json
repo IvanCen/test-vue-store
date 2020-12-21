@@ -5,6 +5,12 @@
   "LazyCommonNavbar": {
     "description": "Auto imported from components/CommonNavbar.vue"
   },
+  "Button": {
+    "description": "Auto imported from components/UI/Button.vue"
+  },
+  "LazyButton": {
+    "description": "Auto imported from components/UI/Button.vue"
+  },
   "Rating": {
     "description": "Auto imported from components/UI/Rating.vue"
   },
@@ -22,6 +28,18 @@
   },
   "LazyCart": {
     "description": "Auto imported from components/cart/Cart.vue"
+  },
+  "CartForm": {
+    "description": "Auto imported from components/cart/CartForm.vue"
+  },
+  "LazyCartForm": {
+    "description": "Auto imported from components/cart/CartForm.vue"
+  },
+  "CartMessage": {
+    "description": "Auto imported from components/cart/CartMessage.vue"
+  },
+  "LazyCartMessage": {
+    "description": "Auto imported from components/cart/CartMessage.vue"
   },
   "CartProductsList": {
     "description": "Auto imported from components/cart/CartProductsList.vue"

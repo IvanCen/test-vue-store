@@ -18,7 +18,7 @@
 </script>
 
 <style scoped lang="sass">
-  @import "~/assets/sass/initial-variables"
+  @import "assets/sass/initial-variables"
 
   .rating
     +flexCenter

@@ -1,5 +1,5 @@
 <template>
-  <div class="products-list-container">
+  <section class="products-list-container">
     <div v-show="loading" class="preloader preloader_relative"/>
     <div :class="['products-list', {'products-list_hide': loading}]" v-show="!loading">
       <products-list-card
@@ -9,7 +9,7 @@
           :class="{ 'products-list_hide': loading }"
       />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -53,8 +53,6 @@
 </script>
 
 <style scoped lang="sass">
-  @import "~/assets/sass/initial-variables.sass"
-
   .products-list
     display: grid
     grid-gap: 16px

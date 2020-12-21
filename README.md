@@ -1,29 +1,46 @@
-# Minimal E-Commerce Website with Nuxt.js + Apisful
+# Интернет магазин на Nuxt
 
-![nuxt.js + apisful](static/repo-hero-image.png)
+## Что это?
+Интернет магазин с основным функционалом для совершения покупки.
 
-### [Live demo](https://demo-nuxt-apisful.netlify.app/)
+## Демо 
+![Main page](https://github.com/IvanCen/test-vue-store/blob/master/static/images/main-image.png "Скрин главной страницы")
 
-The demo shows how to build an e-commerce website using Nuxt.js + Apisful
+## Что реализованно?
+* Роутинг между категориями
+* Данные приходящие с API
+* Корзина: 
+    * Удаление товара
+    * Подсчет финальной суммы
+    * Форма: 
+        * Валидация полей
+* Категории:
+    * Сортировка по цене и рейтингу
+    * Добавление товара в корзину
+    * lazy loading
 
-## Getting started
-1. Log into [Apisful](https://www.apisful.com/)
-1. Create a new project with an `E-Commerce` template
-1. Copy a key from the project's `Access Keys` section
-1. Paste the key as a value of `X-Api-Key` in `api/index.js`
-1. Run the project locally
+## Как открыть?
+Сайт доступен по ссылке http://my-business-card.surge.sh
 
-    ```
-    # install dependencies
-    $ yarn install
-    
-    # serve with hot reload at localhost:3000
-    $ yarn dev
-    ```
-   
-1. Build for production
 
-    ```
-    $ yarn build
-    $ yarn generate
-    ``` 
+## Сборка
+
+```bash
+# Установить зависимости
+$ npm install
+
+# Запустить сервер на localhost:3000
+$ npm run dev
+
+# Собрать сборку для продакшена и запустить
+$ npm run build
+$ npm run start
+
+# Создать сборку статичного сайта
+$ npm run generate
+```
+
+Для дополнительных деталей посетите [Nuxt.js docs](https://nuxtjs.org).
+
+## License
+[MIT](LICENSE)

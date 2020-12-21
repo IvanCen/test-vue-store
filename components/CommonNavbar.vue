@@ -5,18 +5,18 @@
         <h1 class="navbar__title">TestList</h1>
       </nuxt-link>
     </div>
-    <div
+    <button
         class="navbar__cart"
         @click="toggleCart"
     >
-      <img class="navbar__cart-image" src="~/assets/icons/cart.svg" alt="cart">
+      <img class="navbar__cart-image" src="~/assets/icons/cart.svg" alt="корзина">
       <span
           v-if="qty > 0"
           class="navbar__cart-count"
       >
         {{ qty }}
       </span>
-    </div>
+    </button>
   </div>
 </template>
 
@@ -40,7 +40,7 @@
 </script>
 
 <style scoped lang="sass">
-  @import "~/assets/sass/initial-variables"
+  @import "assets/sass/initial-variables"
 
   .navbar
     display: flex
@@ -63,24 +63,25 @@
       text-decoration: none
 
     &__cart
-      border-radius: 0 0 0 $border-radius
       text-decoration: none
       position: relative
       cursor: pointer
+      background-color: transparent
+      border: none
 
       &-count
         width: 12px
         height: 12px
         background: $gray
-        color: $white
+        color: $light
         padding: 2px 4px
         border-radius: 50%
         font-size: 8px
         line-height: 10px
         position: absolute
-        margin-left: -10px;
+        margin-left: -10px
 
       &-image
-        width: 33px
-        height: 34px
+        width: 2rem
+        height: 2rem
 </style>

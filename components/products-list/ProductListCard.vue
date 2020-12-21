@@ -35,7 +35,7 @@
 </script>
 
 <style scoped lang="sass">
-  @import "~/assets/sass/initial-variables"
+  @import "assets/sass/initial-variables"
 
   @mixin font
     font-size: 14px
@@ -50,10 +50,6 @@
     position: relative
     border-radius: 8px
     padding: 16px
-
-    a
-      text-decoration: none
-      color: #000
 
     &__rating
       position: absolute
