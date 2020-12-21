@@ -15,11 +15,8 @@ export const actions = {
     commit('setProducts', await Product.list(filter))
   },
   filteredProducts({state, commit}, {filteredName}) {
-    let filterName
-    if (filteredName === 'цена') filterName = 'price'
-    if (filteredName === 'популярности') filterName = 'rating'
-    const filtered = state.products.sort((a, b) => {
-      return a[filterName] - b[filterName];
+    const filtered = [...state.products].sort((a, b) => {
+      return a[filteredName] - b[filteredName];
     }).reverse()
     commit('setProducts', filtered)
   }

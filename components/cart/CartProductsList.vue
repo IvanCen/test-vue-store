@@ -31,10 +31,6 @@
         />
       </svg>
     </div>
-    <div class="cart-list-footer">
-      <h2 class="cart-list__total">Total</h2>
-      <span>{{ cartPrice }} ₽</span>
-    </div>
   </div>
 </template>
 
@@ -48,7 +44,6 @@
     computed: {
       ...mapGetters({
         cartProducts: 'cart/productsList',
-        cartPrice: 'cart/totalPrice'
       })
     },
     methods: {
@@ -60,17 +55,12 @@
 </script>
 
 <style scoped lang="sass">
-  @import "~/assets/sass/initial-variables"
+  @import "assets/sass/initial-variables"
 
   .cart-list
     width: 100%
     display: grid
     grid-gap: 12px
-
-    &__total
-      margin-bottom: 10px
-      font-size: 18px
-      line-height: 23px
 
     &-item
       display: grid
@@ -115,5 +105,5 @@
         height: 32px
 
         &:hover
-          fill: $black
+          fill: $dark
 </style>

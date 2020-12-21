@@ -6,12 +6,18 @@
       <label class="select__label" for="select-price">По цене
         <input v-model="filterName" @click="toggleSelect" class="select__input" name="select" type="radio"
                id="select-price"
-               value="По цене"/>
+               value="price"
+               ref="price"
+               text="По цене"
+        />
       </label>
-      <label class="select__label" for="select-popular">По популярности
+      <label class="select__label" for="select-rating">По популярности
         <input v-model="filterName" @click="toggleSelect" class="select__input" name="select" type="radio"
-               id="select-popular"
-               value="По популярности"/>
+               id="select-rating"
+               value="rating"
+               ref="rating"
+               text="По популярности"
+        />
       </label>
     </div>
   </div>
@@ -28,9 +34,8 @@
     computed: {
       getFilteredNameSelect() {
         if (this.filterName) {
-          const filteredName = this.filterName.replace(/По\s/, '')
-          this.$store.dispatch('products/filteredProducts', {filteredName})
-          return filteredName
+          this.filterProducts(this.filterName)
+          return this.$refs[this.filterName].getAttribute('text');
         }
         return 'выбрать'
       }
@@ -38,13 +43,16 @@
     methods: {
       toggleSelect() {
         this.isOpen = !this.isOpen
+      },
+      filterProducts(filteredName) {
+        this.$store.dispatch('products/filteredProducts', {filteredName})
       }
     },
   }
 </script>
 
 <style scoped lang="sass">
-  @import "~/assets/sass/initial-variables"
+  @import "assets/sass/initial-variables"
 
   @mixin font
     font-size: 16px
@@ -71,7 +79,7 @@
       border-radius: 8px
       padding: 8px 0
       z-index: 1
-      background-color: $white
+      background-color: $light
       transition: all 0.2s
       opacity: 0
       visibility: hidden
@@ -103,9 +111,11 @@
       line-height: 18px
       cursor: pointer
       padding: 4px 0 4px 12px
+      color: $gray-light
 
       &:hover
-        background: $grey-extra-light;
+        background: $grey-extra-light
+        color: $dark
 
 
 </style>

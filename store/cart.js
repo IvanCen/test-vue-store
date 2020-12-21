@@ -38,12 +38,12 @@ export const mutations = {
     Vue.delete(state.products, productKey)
   },
   clear(state) {
-    Vue.set(state, 'products', {})
+    state.products = {}
   }
 }
 
 export const actions = {
-  submit({commit, getters}) {
+  submit({commit}) {
     commit('clear')
     return true
   }

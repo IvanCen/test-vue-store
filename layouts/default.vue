@@ -4,11 +4,11 @@
     <main class="main">
       <cart :toggleCart="toggleCart" :cartIsOpen="cartIsOpen"/>
       <div class="main__header">
-        <h1 class="title">Главная</h1>
+        <h1 class="main__title">Главная</h1>
         <Select/>
       </div>
-      <div class="content">
-        <products-list-filter />
+      <div class="main__content">
+        <products-list-filter/>
         <Nuxt/>
       </div>
     </main>
@@ -50,16 +50,16 @@
       display: flex
       justify-content: space-between
 
-  .title
-    font-size: 2em
-    color: $gray
-    margin-bottom: 24px
+    &__title
+      font-size: 2em
+      color: $gray
+      margin-bottom: 24px
 
-  .content
-    display: grid
-    grid-auto-flow: column
-    grid-gap: 40px
-    grid-auto-columns: 20% 80%
+    &__content
+      display: grid
+      grid-auto-flow: column
+      grid-gap: 40px
+      grid-auto-columns: 20% 80%
 
   .cart_open
     overflow: hidden
