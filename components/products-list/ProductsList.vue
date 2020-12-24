@@ -1,12 +1,11 @@
 <template>
   <section class="products-list-container">
-    <div v-show="loading" class="preloader preloader_relative"/>
-    <div :class="['products-list', {'products-list_hide': loading}]" v-show="!loading">
+    <div v-if="$fetchState.pending" class="preloader preloader_relative"/>
+    <div :class="['products-list']" v-else>
       <products-list-card
           v-for="product in allProducts"
           :key="product.id"
           :product="product"
-          :class="{ 'products-list_hide': loading }"
       />
     </div>
   </section>
@@ -44,11 +43,9 @@
         loading: false
       }
     },
-    async mounted() {
-      this.loading = true
+    async fetch() {
       await this.loadProducts()
-      this.loading = false
-    }
+    },
   }
 </script>
 
@@ -59,6 +56,4 @@
     grid-template-columns: repeat(auto-fill, 264px)
     grid-auto-flow: dense
 
-    &_hide
-      display: none
 </style>

@@ -23,6 +23,24 @@
   "LazySelect": {
     "description": "Auto imported from components/UI/Select.vue"
   },
+  "ProductListCard": {
+    "description": "Auto imported from components/products-list/ProductListCard.vue"
+  },
+  "LazyProductListCard": {
+    "description": "Auto imported from components/products-list/ProductListCard.vue"
+  },
+  "ProductsList": {
+    "description": "Auto imported from components/products-list/ProductsList.vue"
+  },
+  "LazyProductsList": {
+    "description": "Auto imported from components/products-list/ProductsList.vue"
+  },
+  "ProductsListFilter": {
+    "description": "Auto imported from components/products-list/ProductsListFilter.vue"
+  },
+  "LazyProductsListFilter": {
+    "description": "Auto imported from components/products-list/ProductsListFilter.vue"
+  },
   "Cart": {
     "description": "Auto imported from components/cart/Cart.vue"
   },
@@ -46,23 +64,5 @@
   },
   "LazyCartProductsList": {
     "description": "Auto imported from components/cart/CartProductsList.vue"
-  },
-  "ProductListCard": {
-    "description": "Auto imported from components/products-list/ProductListCard.vue"
-  },
-  "LazyProductListCard": {
-    "description": "Auto imported from components/products-list/ProductListCard.vue"
-  },
-  "ProductsList": {
-    "description": "Auto imported from components/products-list/ProductsList.vue"
-  },
-  "LazyProductsList": {
-    "description": "Auto imported from components/products-list/ProductsList.vue"
-  },
-  "ProductsListFilter": {
-    "description": "Auto imported from components/products-list/ProductsListFilter.vue"
-  },
-  "LazyProductsListFilter": {
-    "description": "Auto imported from components/products-list/ProductsListFilter.vue"
   }
 }

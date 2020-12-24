@@ -21,6 +21,7 @@
   import Cart from "../components/cart/Cart";
   import Select from "../components/UI/Select";
 
+
   export default {
     components: {CommonNavbar, ProductsListFilter, Cart, Select},
     methods: {
@@ -37,7 +38,6 @@
     beforeCreate() {
       this.$nuxt.$router.push({path: '/categories/1'});
     },
-
 
   }
 </script>

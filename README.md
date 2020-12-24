@@ -18,6 +18,16 @@
     * Сортировка по цене и рейтингу
     * Добавление товара в корзину
     * lazy loading
+    
+## Какие технологии?
+Nuxt
+ * Nuxt Lazy Load
+ 
+Vue
+ * Vuex
+ * Vue Masked Input
+    
+Sass, Axios
 
 ## Сборка
 

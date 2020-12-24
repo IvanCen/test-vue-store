@@ -2,15 +2,15 @@
   {
     "name": "categories-category",
     "path": "/categories/:category?",
-    "component": "/Users/admin/WebstormProjects/vue-test-work/pages/categories/_category.vue",
+    "component": "/Users/admin/Desktop/nuxt-store/test-vue-store/pages/categories/_category.vue",
     "chunkName": "pages/categories/_category",
-    "_name": "_3e2cb117"
+    "_name": "_62c683d8"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/admin/WebstormProjects/vue-test-work/pages/index.vue",
+    "component": "/Users/admin/Desktop/nuxt-store/test-vue-store/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_db6eb496"
+    "_name": "_1af46dd8"
   }
 ]

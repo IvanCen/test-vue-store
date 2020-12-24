@@ -1,6 +1,6 @@
 <template>
   <div class="rating">
-    <img src="~assets/icons/star.svg" alt="иконка звезды-рейтинга">
+    <img src="~assets/icons/star.svg">
     <span>{{rating}}</span>
   </div>
 </template>

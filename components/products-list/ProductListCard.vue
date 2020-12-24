@@ -1,7 +1,7 @@
 <template>
   <div class="product-card">
-    <img class="product-card__image" :src="`https://frontend-test.idaproject.com${product.photo}`" :alt="product.title">
-    <img class="product-card__cart" src="~assets/icons/cart.svg" alt="иконка корзины" @click="addToCart">
+    <img class="product-card__image" :src="`https://frontend-test.idaproject.com${product.photo}`">
+    <img class="product-card__cart" src="~assets/icons/cart.svg" @click="addToCart">
     <rating class="product-card__rating" :rating="product.rating"></rating>
     <div class="product-card__title">
       {{ product.name }}
@@ -29,7 +29,7 @@
         this.$store.commit('cart/addProduct', {
           product: this.product,
         })
-      }
+      },
     },
   }
 </script>
@@ -44,6 +44,7 @@
   .product-card
     flex: 0 0 100%
     width: 100%
+    height: 100%
     transition: $duration
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05)
     background: #FFFFFF
